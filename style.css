@@ -361,3 +361,37 @@ button:hover {
 .info-item:nth-child(7) {
   margin-top: 0;
 }
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.know-me {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #3a7bd5;
+  background: #f0f4fa;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  box-shadow: 0 2px 8px rgba(58,123,213,0.08);
+  width: fit-content;
+  gap: 0.5em;
+  transition: background 0.2s;
+}
+
+.know-me-icon {
+  font-size: 1.7em;
+  margin-right: 0.4em;
+  animation: sparkle 1.2s infinite alternate;
+}
+
+@keyframes sparkle {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.3); }
+}
